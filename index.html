@@ -1,76 +1,11 @@
 <!DOCTYPE html>
  <head>
 
-	 <script>
-	var randomNumber = Math.floor(Math.random() * 10);
-	
-	var userGroup;
-	if(randomNumber<5){
-	 userGroup ="beta1";
-	}else{
-	userGroup ="beta2";
-	}
-	console.log(userGroup)
-	
-	window.targetGlobalSettings = {
-
-  cookieDomain: "jezwin.github.io"
-
-};
-	
-
-	// var digitalData = {
- //    pageInstanceID: "Example page - production",
- //    page: {
- //        pageInfo: {
- //            pageID: "5093",
- //            pageName: "Example page",
- //            destinationURL: "https://example.com/index.html",
- //            referringURL: "https://example.com/referrer.html",
- //            sysEnv: "desktop",
- //            variant: "2",
- //            version: "1.14",
- //            breadCrumbs: ["Home","Example group","Example page"],
- //            author: "J Smith",
- //            issueDate: "Example date",
- //            effectiveDate: "Example date",
- //            expiryData: "Example date",
- //            language: "en-US",
- //            geoRegion: "US",
- //            industryCodes: "Example industry codes",
- //            publisher: "Example publisher"
- //        },
- //        category: {
- //            primaryCategory: "Example page category",
- //            subCategory: "Sub-category example"
- //        },
- //        attributes: {
- //            country: "US",
- //            language: "en-US"
- //        }
- //    }
-	// }
-  
-
-
-</script>
 	 
 <script>
     //prehiding snippet for Adobe Target with asynchronous Launch deployment
     (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
 </script>
-	 <script>
-
-	 targetPageParamsAll = function() { 
-
-		 var userGroups = "everyone,"+userGroup;
-		 
-		  return { 
-		    "userGroups1": userGroup
-		  }
-	}; 	
-	 </script>
-
 	 
 <!-- Adobe Launch Code -->	 
 <!-- <script src="https://assets.adobedtm.com/35066b6d6803/291222b5e406/launch-3d3888a68bbf-development.min.js" async></script> -->
